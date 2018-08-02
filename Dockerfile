@@ -1,8 +1,7 @@
 FROM gapsystem/gap-docker-master:francy
 
-MAINTAINER Markus Pfeiffer <markus.pfeiffer@morphism.de>
+MAINTAINER Kamal Saleh <kamal.saleh@uni-siegen.de>
 
-COPY --chown=1000:1000 . $HOME/OrbitalGraphs
 
 USER root
 
@@ -26,4 +25,4 @@ RUN cd $HOME/inst/gap-master/pkg/ \
   
 USER gap
 
-WORKDIR $HOME/inst/gap-master/pkg/
+WORKDIR $HOME/inst/gap-master/pkg/CddInterface
